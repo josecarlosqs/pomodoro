@@ -31,7 +31,7 @@ public class Aplicacion {
 		int cantidadPomodoros;
 		boolean continuarPomodoro;
 
-		System.out.println("Contador pomodoro v0.2");
+		System.out.println("Contador pomodoro v0.3");
 		System.out.println();
 		System.out.println("La tecnica pododoro se define asi:");
 
@@ -78,13 +78,13 @@ public class Aplicacion {
 				if (esDescanzo) {
 					if(cantidadPomodoros == 3){
 						cantidadPomodoros=0;
-						tiempo = 900000;
+						tiempo = 900;
 					}else{
-						tiempo = 300000;
+						tiempo = 300;
 					}
 					mensaje = "Acabo el descanzo!!\nPasar a fase de estudio?";
 				} else {
-					tiempo = 1500000;
+					tiempo = 1500;
 					mensaje = "A descanzar!!\nPasando a fase de descanzo\n(Cancelar para terminar con la cuenta pomodoro)";
 				}
 				
